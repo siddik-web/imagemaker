@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
+    <title>Image Maker</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="text-center">Image Maker</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <form enctype="multipart/form-data" method="post" class="mb-3">
+                        <div class="mb-3">
+                            <label for="im_text" class="form-label">Quotes or Lyrics</label>
+                            <textarea class="form-control" id="im_text" rows="3" name="im_text">Image Maker App</textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="im_color" class="form-label">Background Color</label>
+                            <input type="color" class="form-control form-control-color" id="im_color" name="im_color" value="#563d7c" title="Choose your color">
+                        </div>
+                        <div class="mb-3">
+                            <label for="im_info" class="form-label">Copyright Info / Brand Name</label>
+                            <input type="text" class="form-control" id="im_info" name="im_info" value="@imagemaker" placeholder="@imagemaker / www.exactcv.com">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Make Image</button>
+                    </form>
+                    <canvas id="canvas" width="1000" height="1000"></canvas>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/assets/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/assets/js/app.js" type="text/javascript"></script>></script>
+</body>
+</html>
